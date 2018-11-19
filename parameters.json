@@ -1,0 +1,16 @@
+{
+  "data_dir": "/home/mdo2/Documents/artgan/data",
+  "image_ext": ".jpg",
+  "checkpoint_path": "/home/mdo2/Documents/artgan/checkpoint/",
+  "img_save_dir": "/home/mdo2/Documents/artgan/gen_images/",
+  "batch_size": 32,
+  "noise_length": 100,
+  "epochs": 3000,
+  "dis_train_steps": 1,
+  "gen_train_steps": 1,
+  "moving_average_decay": 0.5,
+  "dis_learning_rate": 0.0002,
+  "gen_learning_rate": 0.00015,
+  "dis_beta1": 0.5,
+  "gen_beta1": 0.5
+}
