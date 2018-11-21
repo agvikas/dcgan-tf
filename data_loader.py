@@ -22,7 +22,7 @@ class data_loader:
             for im_path in path:
                 image = cv2.imread(im_path)
                 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-                image = cv2.resize(image, (256, 256))
+                image = cv2.resize(image, (64, 64))
                 self.images.append(image)
         print("No of images loaded:{}".format(len(self.images)))
 

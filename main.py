@@ -15,7 +15,7 @@ def main():
     parameters['mode'] = args.mode
 
     gen_feed = tf.placeholder(dtype=tf.float32, shape=(None, parameters['noise_length']), name='gen_feed')
-    dis_feed = tf.placeholder(dtype=tf.float32, shape=(None, 256, 256, 3), name='dis_feed')
+    dis_feed = tf.placeholder(dtype=tf.float32, shape=(None, 64, 64, 3), name='dis_feed')
     dis_labels_real = tf.placeholder(dtype=tf.float32, shape=(None, 1), name='dis_labels_real')
     dis_labels_fake = tf.placeholder(dtype=tf.float32, shape=(None, 1), name='dis_labels_fake')
     dis_feed_cond = tf.placeholder(dtype=tf.bool, name='dis_feed_cond')
