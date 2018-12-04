@@ -12,7 +12,7 @@ All requirements can be installed by running ```pip install -r requirements.txt 
 ## Usage
 ```python main.py ```  
 or
-'''python main.py --parameters <path_to_parameters_file_in_JSON_format> --mode <True_or_False_for_training_or_inference>'''
+```python main.py --parameters <path_to_parameters_file_in_JSON_format> --mode <True_or_False_for_training_or_inference>```
 
 #### arguments:
 
