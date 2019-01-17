@@ -1,6 +1,6 @@
 # dcgan-tf
 Implementation of Deep Convolutional Generative Adversarial Network in tensorflow. For original paper click [here](https://arxiv.org/pdf/1511.06434.pdf).
-The dataset used to train was a custom dataset containing paintings of 45 artists. Wide genre of paintings ranging from abstract to portarit were included.
+The dataset used to train was a custom dataset containing portrait paintings of 45 artists.
 
 ## Requirements
 All requirements can be installed by running ```pip install -r requirements.txt ```. If you want to manually install, the list is given below.  
@@ -22,20 +22,26 @@ or
 | --mode | True          | True for training or False for inference |
 
 ## Sample Outputs
-Genreted images during training are shown below.
+Some of the genreted images during training are shown in gif below.
 
-After 15<sup>th</sup> epoch:
+![](/gen_images/movie.gif)
 
-<img src="https://user-images.githubusercontent.com/38666732/49446049-4b79f000-f7f9-11e8-8b0c-2e26a8d1e220.png" width='500'>
+Images generated post training for 510 epochs:
+
+![gen_inf-48](https://user-images.githubusercontent.com/38666732/51323901-69d93980-1a8f-11e9-95e5-8272c46f3833.jpg)
+![gen_inf-15](https://user-images.githubusercontent.com/38666732/51323905-6b0a6680-1a8f-11e9-8411-0876dd6f34e0.jpg)
+![gen_inf-53](https://user-images.githubusercontent.com/38666732/51323909-6d6cc080-1a8f-11e9-8282-1864e02c85c1.jpg)
+![gen_inf-46](https://user-images.githubusercontent.com/38666732/51323923-75c4fb80-1a8f-11e9-83ce-4ea376c844d5.jpg)
+![gen_inf-50](https://user-images.githubusercontent.com/38666732/51323931-78275580-1a8f-11e9-9007-da39081f4526.jpg)
+![gen_inf-48-1](https://user-images.githubusercontent.com/38666732/51324094-d2c0b180-1a8f-11e9-91d5-7f09171b22ee.jpg)
+![gen_inf-38](https://user-images.githubusercontent.com/38666732/51324096-d5230b80-1a8f-11e9-94d0-d7b215bcc302.jpg)
+![gen_inf-55](https://user-images.githubusercontent.com/38666732/51324195-13b8c600-1a90-11e9-9fdd-cc182e2dedb1.jpg)
 
 
-After 207<sup>th</sup> epoch:
 
-<img src="https://user-images.githubusercontent.com/38666732/49446749-e2937780-f7fa-11e8-95e3-7dc0a921e97b.png" width='500'>
 
-After 334<sup>th</sup> epoch:
 
-<img src="https://user-images.githubusercontent.com/38666732/49446932-43bb4b00-f7fb-11e8-9681-4d58fc6bb483.png" width='500'>
+
 
 
 
