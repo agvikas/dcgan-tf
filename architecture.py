@@ -59,16 +59,16 @@ class Model:
 
         with tf.variable_scope('discriminator', reuse=reuse):
 
-            dis_conv1 = self._conv_layer(dis_images, 3, 2, 64, 'dis_conv1')
+            dis_conv1 = self._conv_layer(dis_images, 5, 2, 64, 'dis_conv1')
             '''self.dis_pool1 = self._max_pool(self.dis_conv1, 'dis_pool1')'''
 
-            dis_conv2 = self._conv_layer(dis_conv1, 3, 2, 128, 'dis_conv2')
+            dis_conv2 = self._conv_layer(dis_conv1, 5, 2, 128, 'dis_conv2')
             '''self.dis_pool2 = self._max_pool(self.dis_conv2, 'dis_pool2')'''
 
-            dis_conv3 = self._conv_layer(dis_conv2, 3, 2, 256, 'dis_conv3')
+            dis_conv3 = self._conv_layer(dis_conv2, 5, 2, 256, 'dis_conv3')
             '''self.dis_pool3 = self._max_pool(self.dis_conv3, 'dis_pool3')'''
 
-            dis_conv4 = self._conv_layer(dis_conv3, 3, 2, 512, 'dis_conv4')
+            dis_conv4 = self._conv_layer(dis_conv3, 5, 2, 512, 'dis_conv4')
             '''self.dis_pool4 = self._max_pool(self.dis_conv4, 'dis_pool4')'''
 
             flatten = tf.layers.flatten(dis_conv4, 'flat')
